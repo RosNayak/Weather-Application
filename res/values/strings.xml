@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="welcome_to_weather_application">Welcome to Weather Application</string>
+    <string name="made_in_india">Made in India</string>
+    <string name="enter_the_city_name">Enter the city name</string>
+    <string name="submit">Submit</string>
+    <string name="weather_prediction_of_next_five_days">Weather Prediction of next five days</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_city">Change City</string>
+    <string name="search_cities">Search Cities</string>
+    <string name="dialog_title">Change Default City</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_default_city">Enter default city</string>
+    <string name="clear_history">Clear History</string>
+</resources>

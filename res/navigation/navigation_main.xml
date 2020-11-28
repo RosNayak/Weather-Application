@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/defaultWeatherCityFragment">
+
+    <fragment
+        android:id="@+id/defaultWeatherCityFragment"
+        android:name="com.example.weatherapp.ui.DefaultWeatherCityFragment"
+        android:label="fragment_default_weather_city"
+        tools:layout="@layout/fragment_default_weather_city" >
+        <action
+            android:id="@+id/action_defaultWeatherCityFragment_to_enterCityFragment"
+            app:destination="@id/enterCityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterCityFragment"
+        android:name="com.example.weatherapp.ui.EnterCityFragment"
+        android:label="EnterCityFragment"
+        tools:layout="@layout/fragment_enter_city">
+        <action
+            android:id="@+id/action_enterCityFragment_to_todayWeatherFragment"
+            app:destination="@id/todayWeatherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todayWeatherFragment"
+        android:name="com.example.weatherapp.ui.TodayWeatherFragment"
+        android:label="today_weather_fragment"
+        tools:layout="@layout/today_weather_fragment">
+        <argument android:name="cityName"/>
+        <action
+            android:id="@+id/action_todayWeatherFragment_to_weatherHistoryFragment"
+            app:destination="@id/weatherHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherHistoryFragment"
+        android:name="com.example.weatherapp.ui.WeatherHistoryFragment"
+        android:label="fragment_weather_history"
+        tools:layout="@layout/fragment_weather_history">
+        <argument android:name="cityName"/>
+    </fragment>
+</navigation>
